@@ -13,7 +13,7 @@
     
     <my-login></my-login>
     <div ng-controller="mainCtrl"> 
-        <div ng-show="!!user">Welcom,{{::user.username}},
+        <div ng-show="!!loginInfo.username">Welcom,{{loginInfo.username}},
             <a href="" class="btn btn-danger" ng-click="logout()">logOut</a>
         </div>
     </div>

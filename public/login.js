@@ -7,7 +7,7 @@
             scope:{
                 user:'='
             },
-            controller:'loginCtrl as login' 
+            controller:'loginCtrl as loginC'
         };   
     });    
     
