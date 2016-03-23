@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="stylesheets/style.css">
-   <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
     <script src="libs/jquery/dist/jquery.js"></script>
     <script src="libs/angular/angular.js"></script>
 </head>
-<body ng-app="app" >
+
+<body ng-app="app" ng-controller="LoginCtrl">
     
     
-    <my-login></my-login>
-    <div ng-controller="mainCtrl"> 
-        <div ng-show="!!user">Welcom,{{::user.username}},
-            <a href="" class="btn btn-danger" ng-click="logout()">logOut</a>
-        </div>
+<login-form ng-show="!loginInfo.username" info2="loginInfo" login2="onLogin(info)"></login-form>
+    <div ng-show="!!loginInfo.username">Welcom, {{loginInfo.username}}
+        <a class="btn btn-danger" ng-click="logout()">Logout</a>
     </div>
     <script src="app.js"></script>
-    <script src="login.js"></script>
 </body>
+
 </html>

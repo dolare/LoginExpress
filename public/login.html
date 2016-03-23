@@ -1,9 +1,9 @@
-    <form onsubmit="return false" action="" ng-show="!login.user">
-        <label>UserName:</label> 
-        <input type="text" ng-model="nu.username">
-        <label>PassWord:</label>
-        <input type="password" ng-model="nu.password"> 
-        <button ng-click="login.login(nu)">Login</button>
+    <form  onsubmit="return false;">
+        <label>UserName:</label>
+        <input ng-model="nu.username">
+        <label>Password:</label>
+        <input ng-model="nu.password">
+        <button ng-click="login(nu)">Login</button>
+        <div class="errmsg" ng-hide="!info.msg">{{loginInfo.msg}}</div>
     </form>
-    <span ng-hide="!login.msg" class="errmsg">{{login.msg}}</span>
 

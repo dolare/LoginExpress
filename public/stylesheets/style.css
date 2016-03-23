@@ -7,8 +7,7 @@ a {
   color: #00B7FF;
 }
 
-
-.errmsg{
-    color:red;
-    display:block;
+.errmsg {
+    color: red;
+    display: inline;
 }
